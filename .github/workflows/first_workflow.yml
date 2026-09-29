@@ -1,4 +1,4 @@
-name : My First workflow
+name: GH Actions - First Workflow - Demo 2
 on: [push]
 
 jobs:
@@ -7,3 +7,9 @@ jobs:
     steps:
       - name: List Files
         run: ls -la
+      - name: Print Hello World
+        run: echo "Hello World"
+      - name: Print Date and Time
+        run: 'echo "Current date and time: $(date)"'
+      - name: Print Hostname  
+        run: 'echo "Current hostname: $(hostname)"'
