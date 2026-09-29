@@ -1,0 +1,9 @@
+name : My First workflow
+on: [push]
+
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Files
+        run: ls -la
